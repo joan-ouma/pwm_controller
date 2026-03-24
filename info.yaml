@@ -22,8 +22,7 @@ project:
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
-  pinout:
-  # Inputs
+pinout:
   ui[0]: "Duty Cycle Bit 0 (LSB)"
   ui[1]: "Duty Cycle Bit 1"
   ui[2]: "Duty Cycle Bit 2"
@@ -33,7 +32,6 @@ project:
   ui[6]: "Duty Cycle Bit 6"
   ui[7]: "Duty Cycle Bit 7 (MSB)"
 
-  # Outputs
   uo[0]: "PWM Output"
   uo[1]: ""
   uo[2]: ""
@@ -43,7 +41,6 @@ project:
   uo[6]: ""
   uo[7]: ""
 
-  # Bidirectional pins
   uio[0]: ""
   uio[1]: ""
   uio[2]: ""
@@ -52,4 +49,5 @@ project:
   uio[5]: ""
   uio[6]: ""
   uio[7]: ""
+
 yaml_version: 6
