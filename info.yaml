@@ -1,11 +1,12 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  title:        "8-bit Hardware PWM Controller"
+  author:       "Joan Ouma"
+  discord:      ""
+  description:  "A fully hardware-based Pulse Width Modulation generator with selectable 8-bit duty cycle."
+  language:     "Verilog"
+  clock_hz:     50000000
+
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -21,19 +22,19 @@ project:
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
-pinout:
+  pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "Duty Cycle Bit 0 (LSB)"
+  ui[1]: "Duty Cycle Bit 1"
+  ui[2]: "Duty Cycle Bit 2"
+  ui[3]: "Duty Cycle Bit 3"
+  ui[4]: "Duty Cycle Bit 4"
+  ui[5]: "Duty Cycle Bit 5"
+  ui[6]: "Duty Cycle Bit 6"
+  ui[7]: "Duty Cycle Bit 7 (MSB)"
 
   # Outputs
-  uo[0]: ""
+  uo[0]: "PWM Output"
   uo[1]: ""
   uo[2]: ""
   uo[3]: ""
@@ -51,6 +52,3 @@ pinout:
   uio[5]: ""
   uio[6]: ""
   uio[7]: ""
-
-# Do not change!
-yaml_version: 6
