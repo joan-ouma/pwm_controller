@@ -3,8 +3,8 @@ project:
   author:       "Joan Ouma"
   discord:      ""
   description:  "A hardware-based PWM generator with 8-bit duty cycle control."
-  how_it_works: "Uses an 8-bit counter and comparator to generate PWM."
-  how_to_test:  "Set ui_in to a value and observe uo_out[0] with an oscilloscope."
+  how_it_works: "Uses an 8-bit counter and comparator to generate PWM waves."
+  how_to_test:  "Set ui_in to a value and observe uo_out[0] with a logic analyzer."
   language:     "Verilog"
   clock_hz:     50000000
   tiles:        "1x1"
