@@ -9,6 +9,8 @@ module tt_um_example (
     input  wire       ena,      // always 1 when the design is powered
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
+    // Prevent linter warnings about unused input pins
+    wire _unused = &{uio_in, 1'b0};
 );
 
     // Disable the bidirectional pins since we aren't using them
