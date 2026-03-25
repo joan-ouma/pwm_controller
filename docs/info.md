@@ -1,20 +1,8 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
-
-Explain how your project works
+This is an 8-bit hardware PWM (Pulse Width Modulation) controller. It uses a sequential 8-bit counter and a combinational comparator to generate PWM waves. The duty cycle is determined by the 8-bit value provided to the input pins.
 
 ## How to test
-
-Explain how to use your project
+Set the `ui_in` pins to a desired 8-bit value (0 to 255) using DIP switches or a microcontroller. Observe the `uo_out[0]` pin with an oscilloscope or logic analyzer to see the generated PWM signal.
 
 ## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware is strictly required, though an oscilloscope or LED with a current-limiting resistor is recommended for viewing the output signal.
